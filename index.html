@@ -14,14 +14,60 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <a id="view-leaderboard">View Leaderboard</a>
+        <p >Time: <span id="timer">70</span></p>  
+      </nav>
+    </header>
     <main>
-      <section class="intro"></section>
-      <section class="question"></section>
-      <section class="question"></section>
-      <section class="question"></section>
-      <section class="question"></section>
+
+      <section class="" id="intro-section">
+        <h1>Coding Quiz Challenge</h1>
+        <p> hi </p>
+        <button id="start-btn">Start</button>
+      </section>
+
+      <section class="question hidden" id="question">
+        <h1>Question 1</h1>
+        <ul>
+          <li>
+            <a class="options"></a>
+          </li>
+          <li>
+            <a class="options"></a>
+          </li>
+          <li>
+            <a class="options"></a>
+          </li>
+          <li>
+            <a class="options"></a>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="leaderboard hidden" id="leaderboard">
+        <h1>Leaderboard</h1>
+        <ul id="leaderboard-container">
+        </ul>
+        <a id="go-back">Go Back</a>
+        <a id="clear">Clear</a>
+      </section>
+
+      <section class="hidden" id="end-screen">
+        <h1>All Done!</h1>
+        <p>Enter your intials for the leaderboard</p>
+        <label for="intials">Enter Intials: </label>
+        <input type="text" name="intials" id="intials" placeholder="Enter Intials">
+        <a id="submit-score">Submit</a>
+      </section>
+
     </main>
+    <footer>
+      <section class="hidden" id="feedback">
+        <h2>hi</h2>
+      </section>
+    </footer>
     <script src="./assets/main.js"></script>
   </body>
 </html>
