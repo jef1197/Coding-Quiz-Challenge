@@ -1,0 +1,64 @@
+/* Global Styles */
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.hidden {
+  display: none
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Styles */
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  padding: 15px 50px;
+  justify-content: space-between;
+}
+
+/* Main & footer Styles */
+main, footer {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  width: 50%;
+}
+
+h2 {
+  border-top: 1px solid black;
+  padding-top: 15px;
+}
+
+/* Intro Section */
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Question Section */
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+section a {
+  background-color: aqua;
+  padding: 5px 10px;  
+  border-radius: 10px;
+  cursor: pointer;
+}
