@@ -7,7 +7,7 @@ This is the Module 4 Challenge for the boot camp. The Code was made from scratch
 
 Link to Deployment: https://jef1197.github.io/Coding-Quiz-Challenge/
 
-![screen shot of website](/Assets/website.png)
+![screen shot of website](./assets/images/website.png)
 
 ## Usage
 
