@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Coding Quiz Challenge</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -17,14 +17,17 @@
     <header>
       <nav>
         <a id="view-leaderboard">View Leaderboard</a>
-        <p >Time: <span id="timer">70</span></p>  
+        <p >Time: <span id="timer">60</span></p>  
       </nav>
     </header>
     <main>
 
       <section class="" id="intro-section">
         <h1>Coding Quiz Challenge</h1>
-        <p> hi </p>
+        <p> Welcome to the coding quiz challenge. You will be given 60 seconds to answser the following questions. 
+          Every wrong answer will subtract 10 seconds from your time!
+          Once all questions have been answered your final score will be the remaining time!
+        </p>
         <button id="start-btn">Start</button>
       </section>
 
@@ -57,7 +60,7 @@
       <section class="hidden" id="end-screen">
         <h1>All Done!</h1>
         <p>Enter your intials for the leaderboard</p>
-        <label for="intials">Enter Intials: </label>
+        <label for="intials">Enter name: </label>
         <input type="text" name="intials" id="intials" placeholder="Enter Intials">
         <a id="submit-score">Submit</a>
       </section>
@@ -65,7 +68,7 @@
     </main>
     <footer>
       <section class="hidden" id="feedback">
-        <h2>hi</h2>
+        <h2></h2>
       </section>
     </footer>
     <script src="./assets/main.js"></script>
