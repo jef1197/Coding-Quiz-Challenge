@@ -16,33 +16,33 @@ var clearBtn = document.getElementById('clear');
 
 // Variables for timer and game end
 var timer = document.getElementById('timer');
-var count = 70;
+var count = 60;
 var end = false;
 
 // questions list. Holds the questions, option and answer in a object
 var quizQuestion = [
   {
-    question: 'question 1aaa',
-    answer: 'Option 1',
-    options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
+    question: 'How can we create variables in javascript',
+    answer: 'All of the above',
+    options: ['const', 'var', 'let', 'All of the above'],
     picked: false
   },
   {
-    question: 'question 2',
-    answer: 'Option 1',
-    options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
+    question: 'Choose the correct HTML tag for the largest heading',
+    answer: '<h1>',
+    options: ['<heading>', '<h1>', '<h0>', '<head>'],
     picked: false
   },
   {
-    question: 'question 3',
-    answer: 'Option 1',
-    options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
+    question: 'How can you make a numbered list?',
+    answer: '<ol>',
+    options: ['<ol>', '<ul>', '<list>', 'None of the above'],
     picked: false
   },
   {
-    question: 'question 4',
-    answer: 'Option 1',
-    options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
+    question: 'What does CSS stand for?',
+    answer: 'Cascading Style Sheets',
+    options: ['Colorful Style Sheets', 'Creative Style Sheets', 'Cascading Style Sheets', 'Computer Style Sheets'],
     picked: false
   },
 ]
@@ -141,23 +141,29 @@ function renderFeedback(check) {
 
 // Save Score
 function saveScore() {
-  var newScore = {'name': intialsInput.value, 'score': count}
-  leaderboard.push(newScore);
-  const jsonArray = JSON.stringify(leaderboard);
-  localStorage.setItem('leaderboard', jsonArray);
-  // Sort the array by score
-  leaderboard.sort(function(a, b) {
-    var score1 = (a.score)
-    var score2 = (b.score);
-    if (score1 < score2) {
-      return 1;
-    } else if (score1 > score2) {
-      return -1;
-    } else {
-      return 0;
-    }
-  });  
-  showLeaderboard()
+  // Check if user has inputed a name
+  if (!intialsInput.value.trim()) {
+    alert('please input a name');
+    return;
+  } else {
+    var newScore = {'name': intialsInput.value, 'score': count}
+    leaderboard.push(newScore);
+    const jsonArray = JSON.stringify(leaderboard);
+    localStorage.setItem('leaderboard', jsonArray);
+    // Sort the array by score
+    leaderboard.sort(function(a, b) {
+      var score1 = (a.score)
+      var score2 = (b.score);
+      if (score1 < score2) {
+        return 1;
+      } else if (score1 > score2) {
+        return -1;
+      } else {
+        return 0;
+      }
+    }); 
+    showLeaderboard()
+  }
 }
 
 // Displays leaderboards
