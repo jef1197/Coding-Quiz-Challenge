@@ -5,7 +5,7 @@
 This is the Module 4 Challenge for the boot camp. The Code was made from scratch to do let the user to a simple quiz about full-stack development. It will let the user know for each correct/incorrect answer that is given. Once all questions have been answered they will be given a score based on how fast and accurate they have done on the quiz. Finally, thjey will be able to save thier highscore to the leaderboards which will also allow users to clear the existing highscore if they choose to do so.
 
 
-Link to Deployment: https://jef1197.github.io/Module-3-Challenge-/
+Link to Deployment: https://jef1197.github.io/Coding-Quiz-Challenge/
 
 ![screen shot of website](/Assets/website.png)
 
